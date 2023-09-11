@@ -1,0 +1,292 @@
+@media screen and (min-width: 460px) {
+  .container {
+    width: 460px;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+  .hero {
+    padding: 100px 0 55px 0;
+
+    &-inner {
+
+      &__title {
+        text-align: left;
+        font-weight: 700;
+        margin: 0 0 25px 0;
+        font-size: 38px;
+        line-height: 46.2px;
+      }
+
+      &__descr {
+        text-align: left;
+        font-weight: 600;
+        margin: 0 0 35px 0;
+        font-size: 16px;
+        line-height: 28.288px;
+      }
+
+      .hero-inner__btn {
+        margin: 0 0 70px 0;
+        width: 260px;
+      }
+
+      &__img {
+        width: 500px;
+        height: 500px;
+
+      }
+
+      &__images {
+        width: 630px;
+        height: 615px;
+      }
+    }
+  }
+  .stages {
+    padding: 60px 0 70px 0;
+
+    &-inner {
+
+      &__title {
+        font-size: 50px;
+        width: 511px;
+        margin: 0 auto 45px auto;
+      }
+
+      &__list {
+        &-item {
+          border-radius: 50px;
+          width: 373px;
+          padding: 45px 22px;
+        }
+      }
+    }
+  }
+  .about-us {
+    padding: 60px 0 190px 0;
+
+    &-inner {
+
+      &__title {
+        font-size: 35px;
+        text-align: left;
+      }
+
+      &__img {
+        width: 516px;
+        height: 504px;
+        margin: 0 auto 80px auto;
+      }
+
+      &__descr {
+        text-align: left;
+        margin: 0 0 45px 0;
+      }
+
+      &__btn {
+        width: 260px;
+      }
+    }
+  }
+  .services {
+    padding: 100px 0 150px 0;
+
+    &-inner {
+
+      &__title {
+        font-size: 50px;
+        margin: 0 0 60px 0;
+      }
+
+      &__list {
+        &-item {
+          width: 380px;
+          border-radius: 50px;
+
+          &-img {
+            border-radius: 50px 50px 0 0;
+            width: 380px;
+            height: 300px;
+          }
+
+          &-title {
+            font-size: 25px;
+            padding: 25px 0 17px 40px;
+          }
+
+          &-link {
+            padding: 0 0 35px 40px;
+            font-size: 25px;
+          }
+
+          &-svg {
+            margin: 0 0 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .faq {
+    padding: 50px 0;
+    background-color: rgba(231, 113, 27, 0.15);
+    margin: 0 0 98px 0;
+    &-inner {
+      &__title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        color: $green;
+        margin: 0 0 45px 0;
+      }
+
+      &__list {
+        background-color: $white;
+
+        &-item {
+          border: 1px solid $light-green;
+          padding: 20px 10px;
+          border-top: none;
+
+          &-descr {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 25.5px;
+            margin: 15px 0 0 0;
+            display: none;
+          }
+
+          &-title {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22.8px;
+          }
+
+          &-svg {
+            width: 20px;
+            min-width: min-content;
+          }
+        }
+
+
+        &-item:first-child {
+          border: 1px solid $light-green;
+        }
+
+
+        &-question {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 15px;
+        }
+      }
+
+      .faq-inner__list-item-descr.faq-inner__list-item-descr-active {
+        display: block;
+      }
+
+      .faq-inner__list-item-svg-minus {
+        display: none;
+      }
+
+      .svg-minus-active {
+        display: block;
+      }
+
+      .svg-plus-active {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 40px;
+  }
+  .hero {
+    padding: 90px 0 90px 0;
+    margin: 0 0 90px 0;
+
+    &-inner {
+      display: flex;
+      gap: 17px;
+
+      &__box {
+        width: 526px;
+      }
+
+      &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46.2px;
+      }
+    }
+  }
+  .stages {
+    padding: 90px 0 70px 0;
+
+    &-inner {
+
+      &__title {
+        font-size: 50px;
+        width: 100%;
+        margin: 0 auto 60px auto;
+      }
+
+      &__list {
+        flex-direction: row;
+
+        &-item {
+          width: 374px;
+          height: 362px;
+          padding: 45px 25px;
+        }
+      }
+    }
+  }
+  .about-us {
+    padding: 60px 0 130px 0;
+
+    &-inner {
+      display: flex;
+      gap: 80px;
+
+      &__title {
+        margin: 0 0 25px 0;
+      }
+
+      &__img {
+        width: 535px;
+        height: 500px;
+        margin: 0;
+      }
+    }
+  }
+  .services {
+    padding: 80px;
+
+    &-inner {
+
+      &__title {
+        margin: 0 0 90px 0;
+        line-height: 37.4px
+      }
+
+      &__list {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px 30px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

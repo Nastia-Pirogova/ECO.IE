@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Comfortaa', cursive;
+  background-color: $white;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: $orange;
+  color: $black;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button{
+  cursor: pointer;
+  border: none;
+  display: block;
+  border-radius: 50px;
+  background: $light-green;
+  box-shadow: -7px 7px 19px 0px rgba(0, 0, 0, 0.39);
+  color: $white;
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+}
+
+.button:hover{
+  background-color: $orange;
+}
+.button:active{
+  background-color: $orange;
+}
+
+
+.container {
+  padding: 0 10px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.title{
+  font-family: 'Arimo', sans-serif;
+}
