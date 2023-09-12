@@ -10,6 +10,15 @@
     width: 768px;
     padding: 0 32px;
   }
+  .header {
+    &-inner__btn.js-open-menu {
+      display: none;
+    }
+    &-inner__list {
+      display: flex;
+      gap: 25px;
+    }
+  }
   .hero {
     padding: 100px 0 55px 0;
 
@@ -132,45 +141,28 @@
       }
     }
   }
-
   .faq {
-    padding: 50px 0;
-    background-color: rgba(231, 113, 27, 0.15);
-    margin: 0 0 98px 0;
+    padding: 60px 0;
+
     &-inner {
       &__title {
-        text-align: center;
-        font-size: 28px;
-        font-weight: 600;
-        color: $green;
-        margin: 0 0 45px 0;
+        font-size: 50px;
+        margin: 0 0 60px 0;
       }
 
       &__list {
-        background-color: $white;
-
         &-item {
-          border: 1px solid $light-green;
-          padding: 20px 10px;
+          padding: 30px 15px;
           border-top: none;
 
           &-descr {
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 25.5px;
+            font-size: 16px;
             margin: 15px 0 0 0;
             display: none;
           }
 
           &-title {
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 22.8px;
-          }
-
-          &-svg {
-            width: 20px;
-            min-width: min-content;
+            font-size: 15px;
           }
         }
 
@@ -179,29 +171,61 @@
           border: 1px solid $light-green;
         }
 
+      }
+    }
+  }
+  .booking {
+    padding: 70px 0;
 
-        &-question {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 15px;
-        }
+    &-inner {
+      display: flex;
+      gap: 25px;
+      justify-content: space-between;
+      align-items: center;
+
+      &__content {
+        width: 300px;
       }
 
-      .faq-inner__list-item-descr.faq-inner__list-item-descr-active {
-        display: block;
+      &__title {
+        margin: 0 0 20px 0;
+        text-align: left;
       }
 
-      .faq-inner__list-item-svg-minus {
-        display: none;
+      &__descr {
+        margin: 0;
+        text-align: left;
       }
 
-      .svg-minus-active {
-        display: block;
+      &__btn {
+        width: 260px;
+      }
+    }
+  }
+  .footer {
+    margin: 150px 0 0 0;
+    padding: 110px 0 90px 0;
+
+    &-inner {
+      &__logo {
+        margin: 0 0 65px 0;
       }
 
-      .svg-plus-active {
-        display: none;
+      &__content-title {
+        margin: 0 0 30px 0;
+      }
+
+      &__content-list {
+        gap: 15px;
+      }
+
+      &__content-link {
+        gap: 15px;
+        font-size: 16px;
+      }
+
+      &__btn {
+        width: 260px;
       }
     }
   }
@@ -211,6 +235,19 @@
   .container {
     width: 1280px;
     padding: 0 40px;
+  }
+  .header {
+    &-inner{
+      gap: 250px;
+      justify-content: flex-start
+    }
+    &-inner__list {
+      display: flex;
+      gap: 25px;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 20px;
+    }
   }
   .hero {
     padding: 90px 0 90px 0;
@@ -287,6 +324,71 @@
         gap: 50px 30px;
         flex-wrap: wrap;
       }
+    }
+  }
+  .faq {
+    padding: 100px 0;
+
+    &-inner {
+      &__title {
+        font-size: 50px;
+        margin: 0 0 70px 0;
+      }
+
+      &__list {
+        &-item {
+          &-descr {
+            font-size: 16px;
+            margin: 15px 0 0 0;
+            display: none;
+          }
+
+          &-title {
+            font-size: 17px;
+          }
+        }
+
+
+        &-item:first-child {
+          border: 1px solid $light-green;
+        }
+
+      }
+    }
+  }
+  .booking {
+    padding: 85px 0;
+    margin: 0 0 160px 0;
+
+    &-inner {
+
+      &__content {
+        width: 657px;
+      }
+    }
+  }
+  .footer {
+    margin: 200px 0 0 0;
+    padding: 80px 0;
+
+    &-inner {
+      display: flex;
+      gap: 100px;
+
+      &__logo {
+        margin: 0;
+      }
+
+      &__content-title {
+        margin: 0 0 20px 0;
+      }
+
+      &__content {
+        display: flex;
+        align-items: flex-start;
+        gap: 200px;
+      }
+
     }
   }
 }
