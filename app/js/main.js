@@ -27,3 +27,4 @@ titlePrograms.forEach((titleProgram, index) => {
         refs.modal.classList.toggle("is-hidden");
     }
 })();
+
