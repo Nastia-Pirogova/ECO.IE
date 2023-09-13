@@ -189,6 +189,7 @@
         width: 300px;
         border-radius: 20px;
         background: rgba(24, 167, 57, 0.50);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &-img {
           border-radius: 20px 20px 0 0;
@@ -219,7 +220,7 @@
       }
 
       &-item:hover {
-        background-color: rgba(255, 102, 0, 0.50);;
+        background-color: rgba(255, 102, 0, 0.50);
       }
     }
   }
@@ -369,5 +370,109 @@
       padding: 16px 36px;
       margin: 0 0 56px 0;
     }
+  }
+}
+
+/////////////////////////////////////////
+
+.about-service {
+  margin: 40px 0 100px 0;
+
+  &-inner {
+    &__descr {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28.3px
+    }
+  }
+}
+
+.order {
+  background-color: rgba(78, 143, 51, 0.09);
+  padding: 30px 0 70px 0;
+
+  &-inner {
+    &__title {
+      color: $green;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 31.9px;
+      margin: 0 0 40px 0;
+    }
+  }
+}
+
+.form {
+  &-order {
+    border-radius: 20px;
+    background: rgba(24, 167, 57, 0.50);
+    padding: 15px 14px 50px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-field {
+      border-radius: 20px;
+      background-color: $white;
+      padding: 16px;
+      border: none;
+      font-family: 'Arimo', sans-serif;
+    }
+
+    &__textarea {
+      width: 100% !important;
+      height: 85px;
+      resize: none;
+    }
+
+    &__btn {
+      padding: 18px 36px;
+      margin: 25px 0 0 0;
+    }
+
+    .form-order-choice-label {
+      position: relative;
+    }
+
+    .form-order-choice-checkbox {
+      width: 13px;
+      height: 13px;
+    }
+
+    .form-order-choice-icon {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      width: 13px;
+      height: 13px;
+      border-radius: 2px;
+      border: 1px solid $light-green;
+      background-color: $white;
+      cursor: pointer;
+    }
+
+    .form-order-choice {
+      display: flex;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 4px;
+      align-items: center;
+      gap: 16px;
+      margin: 0 0 8px 0;
+    }
+
+    .form-order-choice-checkbox:checked + .form-order-choice-icon {
+      background-color: $light-green;
+      background-image: url('../images/checkbox.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      opacity: 1;
+      border-color: $light-green;
+    }
+
+
   }
 }

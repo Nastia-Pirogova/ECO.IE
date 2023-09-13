@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ECO.IE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="body">
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="" class="header-inner__link-logo">
+                <img src="images/logo.svg" alt="" class="">
+            </a>
+            <ul class="header-inner__list">
+                <li class="header-inner__list-item"><a href="">Home</a></li>
+                <li class="header-inner__list-item"><a href="">Cleaning Services</a></li>
+                <li class="header-inner__list-item"><a href="">FAQ</a></li>
+                <li class="header-inner__list-item"><a href="">Order</a></li>
+                <li class="header-inner__list-item"><a href="">Reviews</a></li>
+                <li class="header-inner__list-item"><a href="">Contact</a></li>
+            </ul>
+            <button class="header-inner__btn js-open-menu" data-modal-open>
+                <svg class="header-inner__svg"
+                     width="50px" height="32px">
+                    <use class="header-inner__-svg-use"
+                         href="images/icons.svg#icon-menu-burger"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+</header>
+<div class="mobile-menu js-menu-container" data-modal>
+    <div class="mobile-menu-container">
+        <button type="button" class="modal-btn-close js-close-menu" data-modal-close>
+            <svg class="header-navigation__mobile-btn-svg" width="19" height="19">
+                <use class="logo-use" href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list list ">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__item-link link " href="">Home</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Cleaning Services</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">FAQ</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Order</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Reviews</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<main>
+    <section class="order">
+        <div class="container">
+            <div class="order-inner">
+                <h1 class="order-inner__title title">Order</h1>
+                <div class="order-inner__content">
+                    <div class="">
+                        <h3 class="footer-inner__content-title title">Contact</h3>
+                        <ul class="footer-inner__content-list">
+                            <li class="footer-inner__content-list-item">
+                                <a class="footer-inner__content-link" href="tel:+0000000">
+                                    <svg class="footer-inner__list-item-svg"
+                                         width="19px" height="19px">
+                                        <use class="footer-inner__list-item-svg-use"
+                                             href="images/icons.svg#icon-phone"></use>
+                                    </svg>
+                                    <span>00000000</span>
+                                </a>
+                            </li>
+
+                            <li class="footer-inner__content-list-item">
+                                <a class="footer-inner__content-link" href="" target="_blank">
+                                    <svg class="footer-inner__list-item-svg"
+                                         width="19px" height="19px">
+                                        <use class="footer-inner__list-item-svg-use"
+                                             href="images/icons.svg#icon-geo"></use>
+                                    </svg>
+                                    <span class="">adress</span>
+                                </a>
+                            </li>
+                            <li class="footer-inner__content-list-item">
+                                <a class="footer-inner__content-link" href="" target="_blank">
+                                    <svg class="footer-inner__list-item-svg"
+                                         width="19px" height="19px">
+                                        <use class="footer-inner__list-item-svg-use"
+                                             href="images/icons.svg#icon-mail"></use>
+                                    </svg>
+                                    <span class="">cleaning@gmail.com</span>
+                                </a>
+                            </li>
+                            <li class="footer-inner__content-list-item">
+                                <a class="footer-inner__content-link" href="" target="_blank">
+                                    <svg class="footer-inner__list-item-svg"
+                                         width="19px" height="19px">
+                                        <use class="footer-inner__list-item-svg-use"
+                                             href="images/icons.svg#icon-clock"></use>
+                                    </svg>
+                                    <span class="">Monday - Saturday: 10am - 22pm</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form">
+                        <form action="" class="form-order">
+                            <input type="email" class="form-order-field " placeholder="Email">
+
+                            <input type="tel" class="form-order-field" placeholder="Phone number">
+
+                            <input type="text" class="form-order-field" placeholder="First &amp; last name">
+
+                            <div class="form-order-field">
+                                <div>
+                                    <div class="form-order-choice">
+                                        <label class="form-order-choice-label">
+                                            <input type="checkbox" name="user-policy"
+                                                   class="form-order-choice-checkbox">
+                                            <span class="form-order-choice-icon"></span></label>
+                                        One-Off Deep Cleaning
+                                    </div>
+                                    <div class="form-order-choice">
+                                        <label class="form-order-choice-label">
+                                            <input type="checkbox" name="user-policy"
+                                                   class="form-order-choice-checkbox">
+                                            <span class="form-order-choice-icon"></span></label>
+                                        End of Tenancy Cleaning
+                                    </div>
+                                    <div class="form-order-choice">
+                                        <label class="form-order-choice-label">
+                                            <input type="checkbox" name="user-policy"
+                                                   class="form-order-choice-checkbox">
+                                            <span class="form-order-choice-icon"></span></label>
+                                        After Builders Cleaning
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="form-order-choice">
+                                        <label class="form-order-choice-label">
+                                            <input type="checkbox" name="user-policy"
+                                                   class="form-order-choice-checkbox">
+                                            <span class="form-order-choice-icon"></span></label>
+                                        Bathroom Cleaning
+                                    </div>
+                                    <div class="form-order-choice">
+                                        <label class="form-order-choice-label">
+                                            <input type="checkbox" name="user-policy"
+                                                   class="form-order-choice-checkbox">
+                                            <span class="form-order-choice-icon"></span></label>
+                                        Office Cleaning
+                                    </div>
+                                    <div class="form-order-choice">
+                                        <label class="form-order-choice-label">
+                                            <input type="checkbox" name="user-policy"
+                                                   class="form-order-choice-checkbox">
+                                            <span class="form-order-choice-icon"></span></label>
+                                        House cleaning
+                                    </div>
+                                </div>
+                            </div>
+
+                            <textarea class="form-order__textarea form-order-field" id="modal-textarea" placeholder="Message" name="user-message"></textarea>
+                            <button class="form-order__btn button" >Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <a href="">
+                <img src="images/logo.svg" alt="" class="footer-inner__logo"></a>
+            <div class="footer-inner__content">
+                <div class="">
+                    <h3 class="footer-inner__content-title title">Contact</h3>
+                    <ul class="footer-inner__content-list">
+                        <li class="footer-inner__content-list-item">
+                            <a class="footer-inner__content-link" href="tel:+0000000">
+                                <svg class="footer-inner__list-item-svg"
+                                     width="19px" height="19px">
+                                    <use class="footer-inner__list-item-svg-use"
+                                         href="images/icons.svg#icon-phone"></use>
+                                </svg>
+                                <span>00000000</span>
+                            </a>
+                        </li>
+
+                        <li class="footer-inner__content-list-item">
+                            <a class="footer-inner__content-link" href="" target="_blank">
+                                <svg class="footer-inner__list-item-svg"
+                                     width="19px" height="19px">
+                                    <use class="footer-inner__list-item-svg-use"
+                                         href="images/icons.svg#icon-geo"></use>
+                                </svg>
+                                <span class="">adress</span>
+                            </a>
+                        </li>
+                        <li class="footer-inner__content-list-item">
+                            <a class="footer-inner__content-link" href="" target="_blank">
+                                <svg class="footer-inner__list-item-svg"
+                                     width="19px" height="19px">
+                                    <use class="footer-inner__list-item-svg-use"
+                                         href="images/icons.svg#icon-mail"></use>
+                                </svg>
+                                <span class="">cleaning@gmail.com</span>
+                            </a>
+                        </li>
+                        <li class="footer-inner__content-list-item">
+                            <a class="footer-inner__content-link" href="" target="_blank">
+                                <svg class="footer-inner__list-item-svg"
+                                     width="19px" height="19px">
+                                    <use class="footer-inner__list-item-svg-use"
+                                         href="images/icons.svg#icon-clock"></use>
+                                </svg>
+                                <span class="">Monday - Saturday: 10am - 22pm</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="footer-inner__btn button" href="">Order</a>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
